@@ -22,10 +22,20 @@ const students = [
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
 let classStudent = [];
+
+/*
+//Cycle for
 for (let i = 0; i < students.length; i++) {
   const student = students[i].name;
   if( student === 'Marco Lanci'){
     classStudent = students[i].class;
   };
-}
+}*/
+
+//Cycle forEach
+students.forEach(student => {
+  if (student.name === 'Marco Lanci') {
+    classStudent = student.class;
+  }
+});
 console.log(classStudent);
