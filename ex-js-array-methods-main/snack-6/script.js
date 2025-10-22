@@ -20,7 +20,7 @@ let lightZucchine = [];
 let heavyZucchine = [];
 
 //Cycle for
-for (let i = 0; i < zucchine.length; i++) {
+/*for (let i = 0; i < zucchine.length; i++) {
   const zucchina = zucchine[i];
   if(zucchina.length >= 15){
     lightZucchine.push(zucchina); 
@@ -28,5 +28,17 @@ for (let i = 0; i < zucchine.length; i++) {
     heavyZucchine.push(zucchina);
   }
 }
+console.log(lightZucchine);
+console.log(heavyZucchine);*/
+
+//Cycle forEach
+zucchine.forEach(zucchina => {
+  if(zucchina.length >= 15){
+    lightZucchine.push(zucchina); 
+  } else{
+    heavyZucchine.push(zucchina);
+  }
+});
+
 console.log(lightZucchine);
 console.log(heavyZucchine);
