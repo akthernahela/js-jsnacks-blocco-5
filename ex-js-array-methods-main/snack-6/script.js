@@ -15,9 +15,9 @@ const zucchine = [
 
 //Crea due array
 //Uno con le zucchine più lunghe di almeno 15cm
-let lightZucchine = [];
+//let lightZucchine = [];
 //L'altro con le restanti
-let heavyZucchine = [];
+//let heavyZucchine = [];
 
 //Cycle for
 /*for (let i = 0; i < zucchine.length; i++) {
@@ -32,13 +32,20 @@ console.log(lightZucchine);
 console.log(heavyZucchine);*/
 
 //Cycle forEach
-zucchine.forEach(zucchina => {
+/*zucchine.forEach(zucchina => {
   if(zucchina.length >= 15){
     lightZucchine.push(zucchina); 
   } else{
     heavyZucchine.push(zucchina);
   }
 });
+
+console.log(lightZucchine);
+console.log(heavyZucchine);*/
+
+//Filter
+let lightZucchine = zucchine.filter(zucchina => zucchina.length >= 15);
+let heavyZucchine = zucchine.filter(zucchina => zucchina.length < 15);
 
 console.log(lightZucchine);
 console.log(heavyZucchine);
