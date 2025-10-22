@@ -18,3 +18,11 @@ people.forEach(person => {
 });*/
 
 // Risultato: 'Paolo', 'Giulia', 'Marco'
+
+//Aggiungo in un array vuota
+let peoplesName = [];
+for (let i = 0; i < people.length; i++) {
+  const person = people[i];
+  peoplesName.push(person.name);
+}
+console.log(peoplesName);
